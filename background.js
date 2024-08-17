@@ -48,6 +48,35 @@ function exportData() {
   });
 }
 
+// function getData() {
+//   chrome.storage.local.get(null, (result) => {
+//       // Convert JSON data to CSV format
+//       const csvData = convertToCSV(result);
+      
+//       // Download the CSV file
+//       return csvData;
+//   });
+// }
+
+
+function getData() {
+  return new Promise((resolve, reject) => {
+    chrome.storage.local.get(null, (result) => {
+      if (chrome.runtime.lastError) {
+        return reject(chrome.runtime.lastError);
+      }
+
+      // Convert JSON data to CSV format
+      const csvData = convertToCSV(result);
+      
+      // Resolve the promise with the CSV data
+      resolve(csvData);
+    });
+  });
+}
+
+
+
 // Convert JSON data to CSV format
 function convertToCSV(data) {
   const header = ["Domain", "Time Spent (seconds)"];
@@ -59,6 +88,8 @@ function convertToCSV(data) {
 
   return rows.join('\n');
 }
+
+
 function downloadFile(data, filename, mimeType) {
     const blob = new Blob([data], { type: mimeType });
     const url = URL.createObjectURL(blob);
