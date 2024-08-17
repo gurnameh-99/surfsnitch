@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Time Tracker</h1>
+    <div id="chartContainer">
+        <!-- Chart will be rendered here -->
+    </div>
+    <div id="goalsContainer">
+        <h2>Set Your Goals</h2>
+        <input type="text" id="goalInput" placeholder="Enter site (e.g., facebook.com)">
+        <input type="number" id="timeInput" placeholder="Time in minutes">
+        <button id="setGoalBtn">Set Goal</button>
+    </div>
+    <div id="chatContainer">
+        <h2>Chat</h2>
+        <textarea id="chatInput" placeholder="Ask about your online presence"></textarea>
+        <button id="askBtn">Ask</button>
+        <div id="chatOutput"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
