@@ -1,25 +1,154 @@
-body {
+
+html, body {
+    width: 450px;
+    height: 600px;
     font-family: Arial, sans-serif;
-    width: 300px;
-}
-
-h1, h2 {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-#chartContainer {
-    width: 100%;
-    height: 200px;
-}
-
-#goalsContainer, #chatContainer {
-    margin-top: 20px;
-}
-
-input, textarea, button {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    overflow: hidden; 
     box-sizing: border-box;
+}
+
+header {
+    background-color: #2F3C7E;
+    color: #FBEAEB;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+}
+
+header .logo {
+    width: 50px; 
+    margin-right: 10px;
+}
+
+header .extension-name {
+    font-size: 30px;
+}
+nav {
+    background-color: #eaeaea;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center; 
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px; 
+    padding: 10px 20px; 
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+} 
+
+nav a:hover {
+    background-color: #dcdcdc;
+}
+
+.content {
+    margin: 10px;
+    box-sizing: border-box;
+    flex: 1; 
+}
+
+.overview {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 10px;
+}
+
+.chart-and-website-container {
+    width: 90%;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    margin: 0 auto; 
+}
+
+.chart-container {
+    width: 45%;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.website-list {
+    width: 45%;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+.website-list p {
+    margin: 0; 
+    display: flex;
+    justify-content: flex-start; 
+}
+
+#chatContainer {
+    width: 90%;
+    max-width: 400px;
+    height: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #D3C5E5;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    text-align: left;
+    position: relative; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#chatContainer h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#chatInput {
+    width: calc(100% - 20px);
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #02190a;
+    resize: none;
+    box-sizing: border-box;
+}
+
+#askBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }

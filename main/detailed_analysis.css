@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #735DA5;
+    color: #D3C5E5;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #cccccc;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ai-analysis {
+    background-color: hwb(277 51% 6%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+}
+
+.analysis-box {
+    background-color: #f6fdfe;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #0a0a0a;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+
+.chat-container {
+    position: relative;
+}
+
+.chat-toggle {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #d22fba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chat-box {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    max-height: 500px;
+    background-color: #D3C5E5;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.chat-header {
+    background-color: #2F3C7E;
+    color: #FBEAEB;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+
+.chat-header h3 {
+    margin: 0;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: #FBEAEB;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chat-content {
+    padding: 10px;
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+}
+
+#chatInput {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+#askBtn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

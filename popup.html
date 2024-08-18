@@ -1,33 +1,53 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Tab Tracker</title>
-    <style>
-      body {
-        width: 300px;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 10px;
-      }
-      button {
-        margin-top: 10px;
-        padding: 5px;
-      }
-      ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-      }
-      li {
-        margin: 5px 0;
-      }
-    </style>
-    <script src="https://cdn.jsdelivr.net/pyodide/v0.20.0/full/pyodide.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf Snitch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="./icons/icon48.png" alt="Logo" class="logo">
+            <span class="extension-name">Surf Snitch</span>
+        </div>
+    </header>
+
+    <nav>
+        <a href="./main/dashboard.html" target="_blank">Dashboard</a>
+        <a href="./main/detailed_analysis.html" target="_blank">AI Analysis</a>
+    </nav>
+
+    <div class="content">
+        <div class="overview">
+            Overview of today's surf
+        </div>
+
+        <div class="main-container">
+            <div class="chart-and-website-container">
+                <div class="chart-container">
+                    <!-- Pie Chart -->
+                </div>
+
+                <div class="website-list">
+                    <p>Website 1 = hr:min:sec</p>
+                    <p>Website 2 = hr:min:sec</p>
+                    <p>Website 3 = hr:min:sec</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="chatContainer">
+        <h2>Chat</h2>
+        <label for="chatInput">Ask about your online presence:</label>
+        <textarea id="chatInput" placeholder="Type your question here..."></textarea>
+        <button id="askBtn">Ask</button>
+        <div id="chatOutput"></div>
+    </div>
+
     <script src="popup.js"></script>
-  </head>
-  <body>
-    <h1>Tab Tracker</h1>
-    <div id="timeData">Loading...</div>
-    <button id="export">Export Data</button>
-  </body>
+</body>
 </html>

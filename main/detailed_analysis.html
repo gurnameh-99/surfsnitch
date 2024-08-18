@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detailed Analysis</title>
+    <link rel="stylesheet" href="detailed_analysis.css">
+</head>
+<body>
+    <header>
+        <img src="../icons/icon48.png" alt="Logo" width="100">
+        <h1>Surf Snitch</h1>
+    </header>
+
+    <main>
+        <h2>DETAILED ANALYSIS</h2>
+        
+        <div class="ai-analysis">
+            <h3>Today's Activity</h3>
+            <p>AI has analyzed your online presence for today. Here’s a summary of your activities:</p>
+            <div class="analysis-box">
+                <p>Your productivity score is high today with a focus on essential tasks. Keep up the good work!</p>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <button class="chat-toggle" onclick="toggleChat()">💬 Talk to AI</button>
+            <div class="chat-box" id="chatBox">
+                <div class="chat-header">
+                    <h3>Chat with AI</h3>
+                    <button class="close-chat" onclick="toggleChat()">❌</button>
+                </div>
+                <div class="chat-content">
+                    <textarea id="chatInput" placeholder="Type your question here..."></textarea>
+                    <button id="askBtn">Ask</button>
+                    <div id="chatOutput"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="detailed_analysis.js"></script>
+</body>
+</html>
